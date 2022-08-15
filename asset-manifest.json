@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/08YESHWANTH08/musicapp/static/css/main.11093fb5.css",
+    "main.js": "/08YESHWANTH08/musicapp/static/js/main.fbf67f83.js",
+    "static/js/787.d0cea2b6.chunk.js": "/08YESHWANTH08/musicapp/static/js/787.d0cea2b6.chunk.js",
+    "static/media/artist.jpg": "/08YESHWANTH08/musicapp/static/media/artist.1162a757da452033436f.jpg",
+    "static/media/profile.jpg": "/08YESHWANTH08/musicapp/static/media/profile.b6c77859756c7c7e8a1f.jpg",
+    "static/media/track.png": "/08YESHWANTH08/musicapp/static/media/track.bddb5792891bf59741a8.png",
+    "index.html": "/08YESHWANTH08/musicapp/index.html",
+    "main.11093fb5.css.map": "/08YESHWANTH08/musicapp/static/css/main.11093fb5.css.map",
+    "main.fbf67f83.js.map": "/08YESHWANTH08/musicapp/static/js/main.fbf67f83.js.map",
+    "787.d0cea2b6.chunk.js.map": "/08YESHWANTH08/musicapp/static/js/787.d0cea2b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11093fb5.css",
+    "static/js/main.fbf67f83.js"
+  ]
+}
