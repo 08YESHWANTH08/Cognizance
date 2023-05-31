@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Yeshwanth"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 01:27:16 PM"/>
+        <attribute name="created" value="WWVzaHdhbnRoO0RFU0tUT1AtMzRJNEJBUjsyMDIyLTAyLTE3OzAxOjIzOjE3IFBNOzMyNTM="/>
+        <attribute name="edited" value="WWVzaHdhbnRoO0RFU0tUT1AtMzRJNEJBUjsyMDIyLTAyLTE3OzAxOjI3OjE2IFBNOzE7MzM2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, term, tmp, step" type="Integer" array="False" size=""/>
+            <assign variable="num1" expression="0"/>
+            <assign variable="num2" expression="1"/>
+            <assign variable="step" expression="0"/>
+            <output expression="&quot;Enter The Value Of The Term For Which You Want The Value From Fibonacci Series:&quot;" newline="True"/>
+            <input variable="term"/>
+            <if expression="term&gt;0">
+                <then>
+                    <while expression="step&lt;=term">
+                        <if expression="step==term">
+                            <then>
+                                <output expression="num1" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="tmp" expression="num1+num2"/>
+                        <assign variable="num1" expression="num2"/>
+                        <assign variable="num2" expression="tmp"/>
+                        <assign variable="step" expression="step+1"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;Enter A Valid Term Value&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

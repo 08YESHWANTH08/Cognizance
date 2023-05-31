@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Yeshwanth"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 09:06:36 PM"/>
+        <attribute name="created" value="WWVzaHdhbnRoO0RFU0tUT1AtMzRJNEJBUjsyMDIyLTAyLTE3OzA5OjMzOjI4IEFNOzMyNDk="/>
+        <attribute name="edited" value="WWVzaHdhbnRoO0RFU0tUT1AtMzRJNEJBUjsyMDIyLTAyLTE3OzA5OjA2OjM2IFBNOzk7MzM3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter A Number To Check Whether It Is Divisible By 3 or not:&quot;" newline="True"/>
+            <input variable="num"/>
+            <call expression="CHECKER(num)"/>
+        </body>
+    </function>
+    <function name="CHECKER" type="None" variable="">
+        <parameters>
+            <parameter name="num" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <while expression="num&gt;0">
+                <assign variable="sum" expression="sum+(num%10)"/>
+                <assign variable="num" expression="num/10"/>
+            </while>
+            <if expression="sum&gt;9">
+                <then>
+                    <call expression="CHECKER(sum)"/>
+                </then>
+                <else>
+                    <if expression="sum==0">
+                        <then>
+                            <output expression="&quot;True&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sum==3">
+                                <then>
+                                    <output expression="&quot;True&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="sum==6">
+                                        <then>
+                                            <output expression="&quot;True&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="sum==9">
+                                                <then>
+                                                    <output expression="&quot;True&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;False&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
